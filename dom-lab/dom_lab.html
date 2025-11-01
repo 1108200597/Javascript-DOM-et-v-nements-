@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TP DOM et Événements</title>
+  <style>
+    :root { --gap: 10px; }
+    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.5; }
+    #output { color: #0b3d91; font-weight: bold; margin-top: var(--gap); }
+    button { margin: 5px; padding: 10px 14px; cursor: pointer; }
+    .row { display: flex; gap: var(--gap); align-items: center; flex-wrap: wrap; }
+    .panel {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 16px;
+    }
+    .muted { color: #666; font-size: 0.95rem; }
+  </style>
+</head>
+
+<body>
+  <h1>TP : DOM & Événements</h1>
+
+  <p id="message">Bonjour, DOM !</p>
+
+  <div class="row">
+    <button id="changeText">Changer le texte</button>
+    <button id="changeColor">Changer la couleur</button>
+  </div>
+
+  <div class="panel">
+    <label for="nameInput">Votre nom :</label>
+    <input type="text" id="nameInput" placeholder="Saisissez votre nom" />
+    <p class="muted">Tapez au clavier pour voir la mise à jour en direct.</p>
+  </div>
+
+  <p id="output"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
